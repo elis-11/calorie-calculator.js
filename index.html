@@ -28,7 +28,13 @@
               <!-- next -- Age -->
               <div class="col-sm-4">
                 <h6>Age*</h6>
-                <input type="number" class="form-control" name="age" value="20" required />
+                <input
+                  type="number"
+                  class="form-control"
+                  name="age"
+                  value="20"
+                  required
+                />
               </div>
               <div class="col-sm-4">
                 <h6>Gender*</h6>
@@ -192,7 +198,7 @@
         const unit = obj.form.unit.value;
         const formula = obj.form.formula.value;
 
-  let BMR = "";
+        let BMR = "";
         if (formula == 0) {
           // Mifflin
           BMR = Mifflin(gender, age, bodyFat, height, weight);
@@ -242,7 +248,6 @@
 
         return BMR;
       }
-
     </script>
   </body>
 </html>
