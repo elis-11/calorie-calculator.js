@@ -16,9 +16,9 @@
     <script defer type="module" src="./main.js"></script>
     <title>Document</title>
   </head>
-  <body>
-    <div class="container my-5">
-      <form class="card">
+  <body >
+    <div class="container my-5 ">
+      <form class="card bg-secondary" style="--bs-bg-opacity: .2">
         <div class="card-header">
           <h5>Calorie Calculator</h5>
         </div>
@@ -172,17 +172,17 @@
             </div>
           </div>
           <!-- next -- Button -->
-          <div class="ans_calculate"></div>
           <div class="text-center mt-4 card-footer">
             <button
-              class="btn btn-success"
-              onclick="calculateCalorie(this)"
-              type="button"
+            class="btn btn-success" style="--opacity: .2"
+            onclick="calculateCalorie(this)"
+            type="button"
             >
-              <i class="fas fa-calculator me-3"></i>
-              Calculate
-            </button>
-          </div>
+            <i class="fas fa-calculator me-3"></i>
+            Calculate
+          </button>
+        </div>
+        <div class="ans_calculate"></div>
           <!-- end -->
         </div>
       </form>
@@ -216,7 +216,7 @@
         }
 
         document.querySelector(".ans_calculate").innerHTML =
-          '<div class="container "><h4 class="text-center form-control my-3 text-dark fs-4">You should consume <span class="text-success">' +
+          '<div class="container"><h4 class="text-center form-control my-3 text-dark fs-4">You should consume <span class="text-secondary" style="--bs-text-opacity: .8">' +
           Math.ceil(ret) +
           " " +
           unit +
